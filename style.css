@@ -22,7 +22,7 @@ body{
     background-position: top;
 
     .overly{
-        background-color: rgba(0, 0, 0, 0.5);;
+        background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 0;
         right: 0;
@@ -302,9 +302,6 @@ body{
             font-size: 28px;
             color: #fff;
         }
-        .input-contaienr{
-            
-        }
     
         & input, textarea{
             display: block;
@@ -507,7 +504,132 @@ body{
         }
     }
 
-}
+    .footer-section{
+    
+        background-color: #1C1C1C;
+       
+           .footer-links-container{
+               grid-template-columns: repeat(2, 1fr);
+               justify-items: center;
+           
+               .footer-links{
+
+                width: 70%;
+                   
+               }
+           
+           
+             }
+           
+           }
+       }
+        
 
 /* 1100px */
 
+@media (max-width: 1100px){
+
+
+    /* about section */
+
+    .about-section{
+
+        .card-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+            gap: 2em;
+            align-items: center;
+    
+            .img-card{
+                width: 100%;
+    
+            & img{
+                width: 100%;
+            }
+    
+            }
+    
+            .text-card{
+                position: static;
+                top: 0;
+                left: 0;
+                width: 100%;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+    
+            }
+        }
+    }
+
+
+}
+
+/* 1026px */
+
+@media (max-width: 1026px){
+
+    .service-section{
+        background-color: #1C1C1C;
+    
+        & h1{
+            font-size: 33px;
+            text-align: center;
+            color: #fff;
+            padding: 2em 0;
+        }
+    
+        
+    
+        .service-container{
+            gap: 2em;
+            padding: 0 2em 4em 2em;
+
+            .single-service:nth-child(3){
+                grid-column-start: 1;
+                grid-column-end: 3;
+                width: 50%;
+                margin: auto;
+            }
+    
+            .single-service{
+                background-color: #fff;
+                text-align: center;
+                padding: 1em;
+        
+        
+                & img{
+                    width: 75px;
+                }
+        
+                & h2{
+                    font-size: 1.2em;
+                    padding: 1em 0;
+                }
+        
+                & p{
+                    line-height: 1.7rem;
+                }
+                
+                & button{
+                    font-size: 16px;
+                    padding: .7em 2em;
+                    border: none;
+                    color: #fff;
+                    background-color: #f1db25;
+                    margin: 1.5em 0 .5em 0;
+                }
+        
+                & button:hover{
+                    background-color: #fff;
+                    border: 1px solid #f1db25;
+                    color: #000000;
+                }
+        
+            }
+    
+        }
+    
+    
+    }
+
+}
